@@ -1,0 +1,28 @@
+h1{
+  color: green;
+}
+
+h2{
+  color: #005f33;
+}
+
+p{
+  margin-left: 10px; 
+}
+
+img{
+  border: 10px solid #005f33;
+}
+
+#ls{ color: #ff0000 }
+#scs{ color: #ff007f }
+#hs{ color: #ff00ff }
+#ci{ color: #7f00ff }
+#mgt{ color: #0000ff }
+#edu{ color: #007fff }
+#nurs{ color: #00ffff }
+
+.bp{
+  border-left: 5px solid #005f33;
+  padding-left: 10px;
+}

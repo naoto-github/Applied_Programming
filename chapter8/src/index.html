@@ -1,0 +1,9 @@
+<div id="app">
+  <h1>{{ title }}</h1>
+  <button @click="update">更新</button><br>
+  <h2>{{ number }}番のカードを選んでください</h2>
+  <img v-bind:src="cards[0].url" v-on:click="select(0)">
+  <img v-bind:src="cards[1].url" v-on:click="select(1)">
+  <img v-bind:src="cards[2].url" v-on:click="select(2)">
+  <h2>{{ result }}</h2>
+</div>

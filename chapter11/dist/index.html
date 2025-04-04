@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter11</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <input v-model="pokemon_name">
+  <button v-on:click="get">GET</button>
+  <div>
+    <img v-bind:src="pokemon_image">
+  </div>
+  <div>
+    <audio controls v-bind:src="pokemon_sound"></audio>
+  </div>
+</div>
+<!-- partial -->
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>
