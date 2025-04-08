@@ -1,0 +1,9 @@
+.album{
+  color: white;
+  display: flex;
+  text-align: center;
+}
+
+.album img{
+  width: 50%;
+}

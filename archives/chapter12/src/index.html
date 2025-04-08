@@ -1,0 +1,14 @@
+<div id="app">
+  <div>
+    <input type="file" v-on:change="handle" />
+    <button v-on:click="classify">分類</button>
+  </div>
+  <div>
+    <img ref="target" v-if="image" v-bind:src="image" />
+  </div>
+  <div>
+    <ul>
+      <li v-for="result in results">{{ result.label }} ({{ result.confidence }})</li>
+    </ul>
+  </div>
+</div>

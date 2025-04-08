@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter9</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <h1>{{ quiz.quiz }}</h1>
+  <h2>{{ quiz.word }}</h2>
+  
+  <label v-for="(option) in quiz.options">
+    <input type="radio" v-bind:value="option" name="quiz" v-model="answer">
+      {{ option }}
+  </label>
+ 
+  <button v-on:click="send">送信</button>
+  
+  <h2 v-if="result == '正解'" style="color:red">{{ result }}</h2>
+  <h2 v-else style="color:blue">{{ result }}</h2>
+</div>
+<!-- partial -->
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>

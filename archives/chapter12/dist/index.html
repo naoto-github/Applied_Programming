@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter12</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <div>
+    <input type="file" v-on:change="handle" />
+    <button v-on:click="classify">分類</button>
+  </div>
+  <div>
+    <img ref="target" v-if="image" v-bind:src="image" />
+  </div>
+  <div>
+    <ul>
+      <li v-for="result in results">{{ result.label }} ({{ result.confidence }})</li>
+    </ul>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/ml5@0.12.2/dist/ml5.min.js'></script><script type="module" src="./script.js"></script>
+
+</body>
+</html>
